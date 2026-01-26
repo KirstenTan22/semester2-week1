@@ -11,5 +11,8 @@
 
 
 -- write your sql code here
-
 SELECT * from countries;
+SELECT Count(*) FROM countries;
+SELECT Continent, COUNT(*) FROM countries GROUP BY Continent;
+SELECT Continent, SUM(Population) FROM countries GROUP BY Continent;
+SELECT Continent, AVG(GDPPerCapita) FROM countries GROUP BY Continent;
